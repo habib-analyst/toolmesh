@@ -1,0 +1,127 @@
+{
+  "suite": {
+    "tasks": 150,
+    "tasks_per_family": 30,
+    "families": [
+      "clean",
+      "exclusive",
+      "scope_injection",
+      "write_read",
+      "write_write"
+    ],
+    "seed": 42
+  },
+  "strategies": {
+    "naive_parallel": {
+      "tasks_correct": 30,
+      "total_steps": 150,
+      "total_executed": 558,
+      "permission_violations": 30,
+      "scope_denied": 0,
+      "rejected": 0,
+      "wall_ms_total": 6.03,
+      "by_family": {
+        "clean": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 30
+        },
+        "write_write": {
+          "correct": 0,
+          "tasks": 30,
+          "steps": 30
+        },
+        "write_read": {
+          "correct": 0,
+          "tasks": 30,
+          "steps": 30
+        },
+        "scope_injection": {
+          "correct": 0,
+          "tasks": 30,
+          "steps": 30
+        },
+        "exclusive": {
+          "correct": 0,
+          "tasks": 30,
+          "steps": 30
+        }
+      },
+      "accuracy": 0.2
+    },
+    "sequential": {
+      "tasks_correct": 90,
+      "total_steps": 558,
+      "total_executed": 558,
+      "permission_violations": 30,
+      "scope_denied": 0,
+      "rejected": 0,
+      "wall_ms_total": 2.68,
+      "by_family": {
+        "clean": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 181
+        },
+        "write_write": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 107
+        },
+        "write_read": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 90
+        },
+        "scope_injection": {
+          "correct": 0,
+          "tasks": 30,
+          "steps": 90
+        },
+        "exclusive": {
+          "correct": 0,
+          "tasks": 30,
+          "steps": 90
+        }
+      },
+      "accuracy": 0.6
+    },
+    "toolmesh": {
+      "tasks_correct": 150,
+      "total_steps": 257,
+      "total_executed": 498,
+      "permission_violations": 0,
+      "scope_denied": 30,
+      "rejected": 30,
+      "wall_ms_total": 11.94,
+      "by_family": {
+        "clean": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 30
+        },
+        "write_write": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 77
+        },
+        "write_read": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 90
+        },
+        "scope_injection": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 30
+        },
+        "exclusive": {
+          "correct": 30,
+          "tasks": 30,
+          "steps": 30
+        }
+      },
+      "accuracy": 1.0
+    }
+  }
+}
